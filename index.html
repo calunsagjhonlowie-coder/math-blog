@@ -3,127 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Mathematics of a Chair</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #f9f9f9, #e6f7ff);
-      color: #333;
-    }
-
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 30px;
-      text-align: center;
-      border-bottom: 5px solid #4CAF50;
-    }
-
-    header h1 {
-      font-size: 2.5em;
-      margin: 0;
-    }
-
-    header p {
-      font-style: italic;
-      margin-top: 5px;
-    }
-
-    section {
-      padding: 30px;
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      margin-top: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      color: #4CAF50;
-      border-left: 5px solid #4CAF50;
-      padding-left: 10px;
-    }
-
-    .math-box {
-      background: #f0f8ff;
-      border: 2px dashed #4CAF50;
-      padding: 15px;
-      margin: 20px 0;
-      border-radius: 8px;
-      font-family: 'Courier New', monospace;
-    }
-
-    footer {
-      background-color: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-    }
-  </style>
+  <title>Mathematics in Chair Design</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
+    <!-- Sidebar Console -->
+    <aside class="sidebar">
+      <h2>Console</h2>
+      <button onclick="showSection('introduction')">Introduction</button>
+      <button onclick="showSection('geometry')">Geometry in Design</button>
+      <button onclick="showSection('symmetry')">Symmetry & Stability</button>
+      <button onclick="showSection('proportion')">Human Proportion</button>
+      <button onclick="showSection('physics')">Physics & Load</button>
+      <button onclick="showSection('evolution')">Evolution</button>
+      <button onclick="showSection('conclusion')">Conclusion</button>
+    </aside>
 
-<header>
-  <h1> Sitting on Math: The Hidden Geometry of a Chair</h1>
-  <p>Exploring geometry, symmetry, and proportions in everyday objects</p>
-</header>
+    <!-- Main Content -->
+    <main class="content">
+      <section id="introduction" class="section">
+        <h2>Introduction</h2>
+        <p>Mathematics is not confined to classrooms or textbooks—it is woven into the very objects we use every day. One of the most overlooked examples is the chair...</p>
+      </section>
 
-<section>
-  <h2>Introduction</h2>
-  <p>Mathematics is everywhere, even in the simplest objects around us. A chair may look ordinary, but it is a product of careful calculations in geometry, symmetry, and physics. Without math, the chair would wobble, collapse, or fail to provide comfort.</p>
-</section>
+      <section id="geometry" class="section">
+        <h2>Geometry in Design</h2>
+        <p>Chairs are built from basic geometric shapes: rectangles for seats, cylinders for legs, and curves for backrests...</p>
+        <p><strong>Insight:</strong> Office chairs often incorporate adjustable angles, allowing users to shift between upright (90°) and reclined (120°)...</p>
+      </section>
 
-<section>
-  <h2>Geometry in Everyday Design</h2>
-  <p>Chairs are built from basic shapes: rectangles for seats, cylinders for legs, and curves for backrests. The tilt of the backrest—usually between 95° and 110°—is a geometric decision to support posture.</p>
-  <div class="math-box">
-    Example: <br>
-    Backrest angle ≈ 100° <br>
-    Seat height ≈ 45 cm
+      <section id="symmetry" class="section">
+        <h2>Symmetry & Stability</h2>
+        <p>Symmetry is essential in chair design. Most chairs are bilaterally symmetrical, meaning the left and right sides mirror each other...</p>
+        <p><strong>Insight:</strong> Rocking chairs deliberately break symmetry by introducing curved legs, yet mathematics ensures stability...</p>
+      </section>
+
+      <section id="proportion" class="section">
+        <h2>Human Proportion & Aesthetics</h2>
+        <p>Designers often rely on human body measurements and even the golden ratio (1.618) to create chairs that are both functional and visually pleasing...</p>
+        <p><strong>Insight:</strong> Anthropometry guides chair design. Dining chairs are typically 43–48 cm high because this matches average knee height...</p>
+      </section>
+
+      <section id="physics" class="section">
+        <h2>Physics & Load Distribution</h2>
+        <p>Beyond geometry and proportion, physics ensures that chairs can safely support weight. Engineers calculate the load each leg must bear...</p>
+        <p><strong>Insight:</strong> Cantilever chairs (with no back legs) are marvels of physics: they use torque and elasticity to remain stable...</p>
+      </section>
+
+      <section id="evolution" class="section">
+        <h2>Evolution of Chair Mathematics</h2>
+        <p>Ancient stools were simple geometric blocks. Renaissance chairs began incorporating symmetry and proportion inspired by classical architecture. Modern ergonomic chairs integrate advanced geometry, biomechanics, and physics...</p>
+      </section>
+
+      <section id="conclusion" class="section">
+        <h2>Conclusion</h2>
+        <p>A chair is far more than a piece of furniture—it is a living example of mathematics at work. Geometry shapes its structure, symmetry ensures stability, proportion makes it comfortable, and physics keeps it safe...</p>
+      </section>
+    </main>
   </div>
-</section>
 
-<section>
-  <h2>Symmetry and Stability</h2>
-  <p>Most chairs are symmetrical, meaning the left and right sides mirror each other. This symmetry ensures balance and prevents wobbling. The center of gravity must lie within the polygon formed by the legs for stability.</p>
-  <div class="math-box">
-    Formula for stability: <br>
-    Center of Gravity (CG) ∈ Polygon formed by legs
-  </div>
-</section>
+  <footer>
+    <p>&copy; 2026 Mathematics in Everyday Design</p>
+  </footer>
 
-<section>
-  <h2>Measurement and Human Proportion</h2>
-  <p>Seat height is typically around 45 cm, based on average human leg length. Designers sometimes use the <strong>golden ratio (1.618)</strong> to make proportions visually pleasing.</p>
-  <div class="math-box">
-    Golden Ratio: <br>
-    (a+b)/a = a/b = 1.618
-  </div>
-</section>
+  <script>
+    function showSection(id) {
+      // Hide all sections
+      document.querySelectorAll('.section').forEach(sec => sec.style.display = 'none');
+      // Show selected section
+      document.getElementById(id).style.display = 'block';
+    }
 
-<section>
-  <h2>Math Meets Physics</h2>
-  <p>Engineers calculate how much weight each leg can bear. If a chair is designed to hold 100 kg, each of its four legs must support about 25 kg—plus extra for movement.</p>
-  <div class="math-box">
-    Load per leg = Total weight ÷ Number of legs <br>
-    = 100 ÷ 4 = 25 kg
-  </div>
-</section>
-
-<section>
-  <h2>Conclusion</h2>
-  <p>A chair is more than just a piece of furniture—it’s a living example of mathematics at work. Geometry shapes its design, symmetry ensures stability, proportions make it comfortable, and physics keeps it safe. Next time you sit down, remember: you’re resting on centuries of mathematical thought.</p>
-</section>
-<link rel="stylesheet" href="style.css">
-
-<footer>
-  <p>&copy; 2026 Math in Everyday Life Blog | Designed by 
-   EMC-1A</p>
-</footer>
-
+    // Show introduction by default
+    showSection('introduction');
+  </script>
 </body>
 </html>
